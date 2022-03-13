@@ -1,0 +1,61 @@
+.Header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+}
+
+.wrapper-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 48%;
+}
+
+.img-logo{
+    width: 93px;
+    height: 26px;
+    margin-left: 4rem;
+}
+
+.img-logo:hover{
+    cursor: pointer;
+}
+
+.links-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: #fff;
+    width: 72%;
+}
+
+.link{
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+
+.link-home{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.link:hover{
+    cursor: pointer;
+    color: #B3B3B3
+}
+
+.user-logo{
+    width: 30px;
+    height: 33px;
+    margin-right: 4rem;
+    border-radius: 3px;
+}

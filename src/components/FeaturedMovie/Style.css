@@ -1,0 +1,105 @@
+.Featured{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.featured-vertical {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+.featured-horizontal {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111 30%, transparent 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-bottom: 150px;
+    padding-top: 70px;
+}
+
+.title{
+    margin-left: 2.5%;
+    font-size: 3.5rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2.5%;
+    width: 23%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.point{
+    color:#2AAD32;
+}
+
+.description{
+    display: flex;
+    flex-wrap: wrap;
+    width: 47%;
+    margin-top: 3%;
+    margin-left: 2.5%;
+    color: #B3B3B3;
+}
+
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+    margin-top: 20px;
+    margin-left: 2.5%;
+}
+
+
+.featured-watchbutton{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 12px 25px;
+    border-radius: 3px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 1;
+    transition:  all ease 0.2s;
+}
+
+.featured-watchbutton:hover{
+    opacity: 0.7;
+}
+
+.featured-mylistbutton{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #333;
+    padding: 12px 25px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 1;
+    transition:  all ease 0.2s;
+}
+
+.featured-mylistbutton:hover{
+    opacity: 0.7;
+}
+
+.genres{
+    color: #B3B3B3;
+    margin-top: 20px;
+    margin-left: 2.5%;
+}
+
