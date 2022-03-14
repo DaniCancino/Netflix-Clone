@@ -8,6 +8,7 @@ import {getHomeList, getMovieInfo} from './Tmdb';
 function App() {
   const [movieList, setMovieList] = useState([]);
   const [featuredData, setFeaturedData]= useState(null);
+  const [darkHeader, setDarkHeader] = useState(false)
 
   useEffect(()=>{
     const loadAll = async () =>{
@@ -24,11 +25,26 @@ function App() {
     loadAll()
   }, [])
 
+
+  useEffect(()=>{
+    const scrollListener = () => {
+      if (window.scrollY > 10) {
+        setDarkHeader(true);
+      } else {
+        setDarkHeader(false);
+      }
+    }
+    window.addEventListener('scroll', scrollListener);
+    return () => {
+      window.removeEventListener('scroll', scrollListener);
+    }
+  }, [])
+
   console.log(movieList)
 
   return (
     <div className="App">
-      <Header />
+      <Header dark={darkHeader}/>
 
       {featuredData && <FeaturedMovie item={featuredData}/>}
 

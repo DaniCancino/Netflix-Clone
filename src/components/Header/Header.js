@@ -4,9 +4,9 @@ import logo from '../../assets/logo.png'
 import user from '../../assets/user.webp'
 import './Style.css'
 
-const Header = () =>{
+const Header = ({dark}) =>{
     return(
-        <div className= 'Header'>
+        <div className= {dark ? 'darkHeader' : 'Header'}>
             <div className='wrapper-left'>
                 <a href='/'>
                     <img src={logo} alt='netflix logo' className='img-logo'/>

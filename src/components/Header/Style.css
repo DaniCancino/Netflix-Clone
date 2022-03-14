@@ -9,6 +9,18 @@
     z-index: 999;
 }
 
+.darkHeader{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+    background-color: #141414;
+}
+
 .wrapper-left{
     display: flex;
     flex-direction: row;
