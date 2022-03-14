@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import FeaturedMovie from './components/FeaturedMovie/FeaturedMovie';
 import Header from './components/Header/Header';
+import MovieRow from './components/MovieRow/MovieRow';
 import {getHomeList, getMovieInfo} from './Tmdb';
 
 function App() {
@@ -23,12 +24,17 @@ function App() {
     loadAll()
   }, [])
 
+  console.log(movieList)
 
   return (
     <div className="App">
       <Header />
 
       {featuredData && <FeaturedMovie item={featuredData}/>}
+
+      <div className='list'>
+        {movieList.map((item, key) => <MovieRow title={item.title} key={key} items={item.items}/>)}
+      </div>
 
     </div>
   );

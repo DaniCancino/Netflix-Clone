@@ -10,8 +10,12 @@
   justify-content: flex-start;
   width: 100%;
   height: 100vh;
-  background-color: #292929;
+  background-color: #111;
   font-family: 'Roboto', sans-serif;
+}
+
+.list{
+  margin-top: -150px;
 }
 
 

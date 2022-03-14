@@ -13,7 +13,7 @@ const FeaturedMovie = ({item}) =>{
     if(descr.length > 200){
         descr = descr.substring(0, 200)  + '...';
      }
-     console.log(item)
+
     return(
         <div className='Featured'
             style={{

@@ -12,7 +12,7 @@
 .wrapper-left{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 48%;
 }
@@ -20,7 +20,7 @@
 .img-logo{
     width: 93px;
     height: 26px;
-    margin-left: 4rem;
+    margin-left: 2.6rem;
 }
 
 .img-logo:hover{
@@ -34,17 +34,18 @@
     align-items: center;
     list-style: none;
     color: #fff;
-    width: 72%;
+    width: 70%;
+    margin-left: -3rem;
 }
 
 .link{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     transition: 0.4s;
 }
 
 .link-home{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
 }
 
